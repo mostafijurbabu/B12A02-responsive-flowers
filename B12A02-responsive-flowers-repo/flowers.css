@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+}
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 .noto-serif-font {
@@ -5,4 +12,75 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+.black01 {
+  color: #000000;
+}
+.black02 {
+  color: #111111;
+}
+.primary {
+  color: #e95a08;
+}
+.dark01 {
+  color: #252432;
+}
+.dark02 {
+  color: #8987a1;
+}
+.dark03 {
+  color: #8987a1;
+}
+
+/* header styles */
+
+/* navbar styles */
+.navbar {
+  justify-content: space-between;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+/* banner style */
+
+.banner{
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 70px;
+  align-items: center;
+}
+.banner-left{
+  padding-top: 130px;
+}
+
+.banner-right{
+  padding-top: 60px;
+}
+.banner-left h1{
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.banner-left p{
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-top: 20px;
 }
