@@ -122,6 +122,41 @@
   align-items: center;
 }
 
+/* Flower and Plants lover style */
+
+.flower-plants {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.flower-plant-left {
+  position: relative;
+  background-image: url(./assets/flower-store.png);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.image1 {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+}
+
+.flower-title {
+  font-size: 3.25em;
+  font-weight: bold;
+}
+.flower-plant-right ul li {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 576px) {
   .nav-item {
     align-items: center;
@@ -155,6 +190,23 @@
     align-items: center;
   }
   .plants {
+    align-items: center;
+  }
+  .flower-plant-left {
+    position: relative;
+    background-image: url(./assets/flower-store.png);
+    background-repeat: no-repeat;
+    visibility: visible;
+  }
+
+  .flower-plants {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image1 {
+    visibility: hidden;
+  }
+  .flower-plant-right ul li {
     align-items: center;
   }
 }
