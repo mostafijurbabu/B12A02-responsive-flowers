@@ -48,6 +48,9 @@
   list-style: none;
   margin-right: 30px;
 }
+.nav-item2{
+  list-style: none;
+}
 
 .nav-link {
   text-decoration: none;
@@ -83,4 +86,34 @@
   font-size: 1.25em;
   font-weight: 400;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 576px){
+  .nav-item{
+    align-items: center;
+    visibility: hidden;
+  }
+  .navbar{
+    padding-left: 20px;
+  }
+  .banner{
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-right{
+    padding-left: 20px;
+  }
+  .banner-left h1{
+  font-size: 3em;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+}  
+.banner-left p{
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
 }
