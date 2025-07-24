@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Flowers</title>
     <link rel="stylesheet" href="./flowers.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -15,26 +27,35 @@
   </head>
   <body class="noto-serif-font">
     <header>
+      <!--Nav area-->
+
       <nav class="navbar display-flex">
         <img src="./assets/logo.png" alt="" />
         <ul class="nav-links display-flex">
-          <li class="nav-item"><a href="" class="nav-link dark01">Home</a></li>
-          <li class="nav-item"><a href="" class="nav-link dark02">Shop</a></li>
-          <li class="nav-item">
+          <li class="nav-item inter-font">
+            <a href="" class="nav-link dark01">Home</a>
+          </li>
+          <li class="nav-item inter-font">
+            <a href="" class="nav-link dark02">Shop</a>
+          </li>
+          <li class="nav-item inter-font">
             <a href="" class="nav-link dark02">About us </a>
           </li>
           <li class="nav-item2">
-            <a href="" class="nav-link black01"
+            <a href="" class="nav-link inter-font black01"
               ><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a
             >
           </li>
         </ul>
       </nav>
+
+      <!--Banner area-->
+
       <section class="banner display-flex">
         <div class="banner-left">
           <h1>ALWAYS <span class="primary">FRESH</span></h1>
           <h1 class="primary">FLOWERS</h1>
-          <p class="black01">
+          <p class="inter-font black01">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh flowers that are perfect for any occasion.
@@ -45,7 +66,68 @@
         </div>
       </section>
     </header>
-    <main></main>
+    <main>
+      <section class="our-plants">
+        <div class="plants">
+          <h3><span class="primary">Our</span> Plants</h3>
+          <p class="black01">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From <br />
+            classic roses to exotic blooms, we offer a wide variety of fresh.
+          </p>
+        </div>
+        <div class="plants-card">
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+          <div class="card-item">
+            <img src="./assets/sample-flower-image.png" alt="" />
+            <h3>Lily Blossom</h3>
+            <h3>20 USD</h3>
+            <button class="btn">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

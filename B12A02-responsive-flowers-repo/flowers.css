@@ -4,14 +4,12 @@
   margin: 0;
 }
 
-}
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
-
 .noto-serif-font {
   font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
 }
 
 /* shared styles */
@@ -19,7 +17,7 @@
   display: flex;
 }
 .black01 {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.5);
 }
 .black02 {
   color: #111111;
@@ -48,7 +46,7 @@
   list-style: none;
   margin-right: 30px;
 }
-.nav-item2{
+.nav-item2 {
   list-style: none;
 }
 
@@ -64,56 +62,99 @@
 
 /* banner style */
 
-.banner{
+.banner {
   max-width: 1140px;
   margin: 0 auto;
   margin-top: 70px;
   align-items: center;
 }
-.banner-left{
+.banner-left {
   padding-top: 130px;
 }
 
-.banner-right{
+.banner-right {
   padding-top: 60px;
 }
-.banner-left h1{
+.banner-left h1 {
   font-size: 4em;
   font-weight: bold;
   margin-top: 20px;
 }
-.banner-left p{
+.banner-left p {
   font-size: 1.25em;
   font-weight: 400;
   margin-top: 20px;
 }
 
-@media screen and (max-width: 576px){
-  .nav-item{
+/* Our Plants style */
+.plants-card {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.plants {
+  margin-top: 120px;
+  text-align: center;
+}
+.plants h3 {
+  font-size: 3em;
+  font-weight: bold;
+}
+.plants p {
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.card-item h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
+}
+.btn {
+  background-color: #e95a08;
+  padding: 19px 90px;
+  color: white;
+  border: none;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-item {
     align-items: center;
     visibility: hidden;
   }
-  .navbar{
+  .navbar {
     padding-left: 20px;
   }
-  .banner{
+  .banner {
     flex-direction: column;
     text-align: center;
   }
-  .banner-right{
+  .banner-right {
     padding-left: 20px;
   }
-  .banner-left h1{
-  font-size: 3em;
-  font-weight: 600;
-  text-align: left;
-  padding-left: 20px;
-}  
-.banner-left p{
-  font-size: 1.25em;
-  font-weight: 400;
-  margin-top: 20px;
-  text-align: left;
-  padding-left: 20px;
-}
+  .banner-left h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .banner-left p {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .plants-card {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .plants {
+    align-items: center;
+  }
 }
