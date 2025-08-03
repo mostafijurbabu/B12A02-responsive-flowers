@@ -357,9 +357,6 @@
     margin-bottom: 50px;
   }
   .join-form {
-    background-image: url(./assets/news-letter-bg.png);
-    background-repeat: no-repeat;
-    width: 100%;
     height: auto;
     visibility: visible;
   }
@@ -372,6 +369,6 @@
   .home-list ul li,
   .features-list ul li,
   .search-list a img {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 }
